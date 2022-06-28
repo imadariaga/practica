@@ -1,0 +1,13 @@
+name: cd
+
+on:
+ push:
+   branches:
+     - 'feature-01'
+
+jobs:
+   name: Unit Tests
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v1
+     - run : mvn test
