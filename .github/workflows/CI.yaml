@@ -6,8 +6,7 @@ on:
      - 'feature-01'
 
 jobs:
-   name: Unit Tests
+   name: PushAction
    runs-on: ubuntu-latest
    steps:
-     - uses: actions/checkout@v1
-     - run : mvn test
+     - run : echo "🎉 The job was automatically triggered by a push"
